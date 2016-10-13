@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/loginbackground"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/abslay">
+    <RelativeLayout
+        android:layout_width="match_parent"  android:orientation="vertical"
+        android:layout_height="wrap_content"
+        xmlns:ads="http://schemas.android.com/apk/res-auto">
+
+
+        <TextView
+            android:layout_width="180dp"
+            android:layout_height="41dp"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="City"
+            android:id="@+id/city_layout"
+            android:layout_x="150dp"
+            android:layout_y="50dp"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center|center_horizontal"
+            android:textAlignment="center"
+            android:textColor="#fffffbfd"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:textSize="17dp" />
+
+        <ImageView
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:id="@+id/iv_weather"
+            android:layout_x="166dp"
+            android:layout_y="4dp"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/city_layout"
+            android:layout_toStartOf="@+id/city_layout" />
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:text="Temp(°C)"
+            android:id="@+id/t_now"
+            android:layout_x="119dp"
+            android:layout_y="30dp"
+            android:layout_gravity="center_horizontal"
+            android:textSize="17dp"
+            android:textStyle="bold"
+            android:gravity="center_vertical|center|center_horizontal"
+            android:layout_alignBottom="@+id/iv_weather"
+            android:layout_toRightOf="@+id/iv_weather"
+            android:layout_toEndOf="@+id/iv_weather"
+            android:layout_below="@+id/city_layout"
+            android:textIsSelectable="true" />
+
+
+        <TextView
+            android:layout_width="140dp"
+            android:layout_height="30dp"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:id="@+id/description"
+            android:textAlignment="center"
+            android:gravity="left|center|center_horizontal"
+            android:textSize="17dp"
+            android:layout_alignTop="@+id/t_now"
+            android:layout_toRightOf="@+id/t_now"
+            android:layout_alignBottom="@+id/iv_weather"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+        <TextView
+            android:layout_width="55dp"
+            android:layout_height="50dp"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:id="@+id/co"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/city_layout"
+            android:layout_above="@+id/description"
+            android:textSize="20dp" />
+
+
+    </RelativeLayout>
+
+    <TableRow
+        android:layout_width="371dp"
+        android:layout_height="20dp"
+        android:layout_x="11dp"
+        android:layout_y="103dp">
+
+        <TextView
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:id="@+id/time0"
+            android:layout_marginLeft="35dp"
+            android:gravity="center" />
+
+        <TextView
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:id="@+id/time1"
+            android:layout_marginLeft="10dp"
+            android:gravity="center"
+            android:text="time" />
+
+        <TextView
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:id="@+id/time2"
+            android:layout_marginLeft="10dp"
+            android:gravity="center"
+            android:text="time" />
+
+        <TextView
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:id="@+id/time3"
+            android:layout_marginLeft="10dp"
+            android:gravity="center"
+            android:text="time" />
+
+        <TextView
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:id="@+id/time4"
+            android:layout_marginLeft="10dp"
+            android:gravity="center"
+            android:text="time" />
+
+        <TextView
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:id="@+id/time5"
+            android:layout_marginRight="35dp"
+            android:layout_marginLeft="10dp"
+            android:gravity="center" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="385dp"
+        android:layout_height="20dp"
+        android:layout_x="5dp"
+        android:layout_y="125dp">
+
+        <TextView
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:id="@+id/temp_6"
+            android:layout_marginLeft="35dp"
+            android:textAlignment="center"
+            android:gravity="center" />
+
+        <TextView
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:id="@+id/temp_9"
+            android:layout_marginLeft="10dp"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:text="°C" />
+
+        <TextView
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:id="@+id/temp_12"
+            android:layout_marginLeft="10dp"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:text="°C" />
+
+        <TextView
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="°C"
+            android:id="@+id/temp_15"
+            android:layout_marginLeft="10dp"
+            android:textAlignment="center"
+            android:gravity="center" />
+
+        <TextView
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:id="@+id/temp_18"
+            android:layout_marginLeft="10dp"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:text="°C" />
+
+        <TextView
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:id="@+id/temp_21"
+            android:textAlignment="gravity"
+            android:layout_marginRight="35dp"
+            android:layout_marginLeft="10dp"
+            android:gravity="center" />
+    </TableRow>
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="251dp"
+        android:id="@+id/listView"
+        android:layout_x="0dp"
+        android:layout_y="198dp"
+         />
+
+    <EditText
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtSearch"
+        android:layout_x="63dp"
+        android:layout_y="159dp" />
+
+
+
+    <TextView
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Where Are You ?"
+        android:id="@+id/textView2"
+        android:layout_x="49dp"
+        android:layout_y="147dp"
+        android:textColor="#ffffffff"
+        android:gravity="center" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="86dp"
+        android:layout_x="1dp"
+        android:layout_y="449dp"
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+        >
+        <com.startapp.android.publish.banner.Banner
+            android:id="@+id/startAppBanner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+
+
+
+
+    </RelativeLayout>
+
+    <TableRow
+        android:layout_width="385dp"
+        android:layout_height="37dp"
+        android:layout_x="6dp"
+        android:layout_y="67dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:id="@+id/ivT1"
+            android:layout_marginLeft="35dp" />
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:id="@+id/ivT2"
+            android:layout_marginLeft="10dp" />
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:id="@+id/ivT3"
+            android:layout_marginLeft="10dp" />
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:id="@+id/ivT4"
+            android:layout_marginLeft="10dp" />
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:id="@+id/ivT5"
+            android:layout_marginLeft="14dp" />
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:id="@+id/ivT6"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="35dp" />
+    </TableRow>
+
+
+</AbsoluteLayout>
