@@ -564,7 +564,7 @@ public class ChooseCity {
                         "Jensen Beach,FL" ,
                         "Jersey City,NJ" ,
                         "Jeju,South Korea",
-                        "Jerusalem,Israel" ,
+                        "Jerusalem,Palestine" ,
                         "Johannesburg,S_Africa" ,
                         "Johnson City,TN" ,
 
