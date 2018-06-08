@@ -4,10 +4,7 @@ package com.wooweather;
  * Created by mostafa on 12/31/2015.
  */
 public class ChooseCity {
-        String AllCity[];
-
-        public String[] getAllCity() {
-                AllCity = new String[]{"Aalborg,Denmark" ,"Abbotsford,BC" , "Aberdeen_Prv_Gnd,MD" ,
+        public static final String AllCity[] = {"Aalborg,Denmark" ,"Abbotsford,BC" , "Aberdeen_Prv_Gnd,MD" ,
                         "Aberdeen,ID" , "Aberdeen,MD" ,
                         "Aberdeen,Scotland" ,"Aberdeen,SD" , "Aberdeen,WA" , "Abilene,KS" ,
                         "Abilene,TX" , "Acapulco,Mexico" , "Accra,Ghana" ,
@@ -1695,7 +1692,11 @@ public class ChooseCity {
                         "Zurich,Switzerland" ,
                         "Zwickau,Germany"
                 };
-
+        /**
+        * @deprecated
+        * use ChooseCity.AllCity insted of this method.
+        */
+        public static String[] getAllCity() {               
                 return AllCity;
         }
 
