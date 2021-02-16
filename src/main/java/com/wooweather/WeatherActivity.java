@@ -82,8 +82,7 @@ public class WeatherActivity extends ActionBarActivity {
 
 
     private ExpandableListView elView, elv, elv1;
-    String city;
-    String items[];
+    String city; 
     public String endpoint3, dailyE3;
 
 
@@ -195,11 +194,8 @@ public class WeatherActivity extends ActionBarActivity {
 
 
     }
-    public void intList (){
-        ChooseCity chooseCity = new ChooseCity();
-        items = chooseCity.getAllCity();
-       // items = new String[] {"Toronto,Ca","Paris,Fr","Rome","New York","Rio","top","New J","Pe"};
-         listItems = new ArrayList<>(Arrays.asList(items));
+    public void intList (){               
+        listItems = new ArrayList<>(Arrays.asList(ChooseCity.AllCity));
         adapter = new ArrayAdapter<String>(this,R.layout.list_item,R.id.txtitem,listItems);
         listView.setAdapter(adapter);
 
